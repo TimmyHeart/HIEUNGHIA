@@ -6,10 +6,15 @@
         <entry key="..\:/TT_LTMP/KT_TranHieuNghia/app/src/main/res/drawable/border.xml" value="0.1" />
         <entry key="..\:/TT_LTMP/KT_TranHieuNghia/app/src/main/res/drawable/btn.xml" value="0.1435" />
         <entry key="..\:/TT_LTMP/KT_TranHieuNghia/app/src/main/res/drawable/button.xml" value="0.1" />
+        <entry key="..\:/TT_LTMP/KT_TranHieuNghia/app/src/main/res/drawable/mymenu.xml" value="0.1435" />
         <entry key="..\:/TT_LTMP/KT_TranHieuNghia/app/src/main/res/layout/activity_bai1.xml" value="0.22" />
         <entry key="..\:/TT_LTMP/KT_TranHieuNghia/app/src/main/res/layout/activity_bai2.xml" value="0.25" />
+        <entry key="..\:/TT_LTMP/KT_TranHieuNghia/app/src/main/res/layout/activity_bai3.xml" value="0.25" />
+        <entry key="..\:/TT_LTMP/KT_TranHieuNghia/app/src/main/res/layout/activity_listview1.xml" value="0.15307971014492755" />
+        <entry key="..\:/TT_LTMP/KT_TranHieuNghia/app/src/main/res/layout/activity_listview2.xml" value="0.15307971014492755" />
         <entry key="..\:/TT_LTMP/KT_TranHieuNghia/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/TT_LTMP/KT_TranHieuNghia/app/src/main/res/layout/activity_main2.xml" value="0.1" />
+        <entry key="..\:/TT_LTMP/KT_TranHieuNghia/app/src/main/res/menu/mymenu.xml" value="0.15729166666666666" />
       </map>
     </option>
   </component>
