@@ -1,7 +1,9 @@
 package com.example.kt_tranhieunghia;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -50,7 +52,27 @@ img3.setOnClickListener(new View.OnClickListener() {
         btnthoat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+                //Tạo đối tượng
+                AlertDialog.Builder b = new AlertDialog.Builder(MainActivity.this);
+                //Thiết lập tiêu đề
+                b.setTitle("Xác nhận");
+                b.setMessage("Bạn có đồng ý thoát chương trình không?");
+                // Nút Ok
+                b.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        finish();
+                    }
+                });
+                //Nút Cancel
+                b.setNegativeButton("Không đồng ý", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+//Tạo dialog
+                AlertDialog al = b.create();
+//Hiển thị
+                al.show();
             }
         });
 
@@ -93,6 +115,7 @@ img3.setOnClickListener(new View.OnClickListener() {
 
 
 
+
     private void addControls(){        //kết nối biến java vơi xml
         btnthoat = findViewById(R.id.btnThoat);
         img1 = findViewById(R.id.image1);
@@ -101,4 +124,8 @@ img3.setOnClickListener(new View.OnClickListener() {
         img4 = findViewById(R.id.image4);
         img5 = findViewById(R.id.image5);
     }
+
+
+
+
 }

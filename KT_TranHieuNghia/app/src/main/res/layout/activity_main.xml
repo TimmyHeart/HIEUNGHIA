@@ -53,11 +53,12 @@
                 android:layout_marginRight="12dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn"
+                android:backgroundTint="#E4D4D4"
                 android:text="Thoát"
                 android:textAllCaps="false"
                 android:textColor="#776D6D"
                 android:textSize="12sp"
-                tools:ignore="OnClick" />
+               />
 
         </LinearLayout>
 
