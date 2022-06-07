@@ -29,7 +29,10 @@
         android:text="ListView 2 - 63 Tỉnh thành " />
     <Button
         android:onClick="moManHinhListView3"
-        android:text="Éc Éc Éc Éc"
+        android:text="ListView 3"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button3"

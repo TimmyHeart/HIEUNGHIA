@@ -1,8 +1,5 @@
 package com.example.kt_tranhieunghia;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     Button btnthoat;
@@ -90,8 +90,9 @@ img3.setOnClickListener(new View.OnClickListener() {
                 onBackPressed();
                 return true;
             case R.id.menu1:
-
-                Toast.makeText(this, "Ban vua bam vao menu1", Toast.LENGTH_SHORT).show();//code xử lý khi bấm menu1
+                i=new Intent(MainActivity.this,thongtin.class);
+                startActivity(i);
+                //code xử lý khi bấm menu3
                 break;
             case R.id.menu2:
 

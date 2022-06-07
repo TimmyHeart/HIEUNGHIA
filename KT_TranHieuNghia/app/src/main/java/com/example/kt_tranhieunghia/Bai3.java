@@ -1,15 +1,14 @@
 package com.example.kt_tranhieunghia;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Toast;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Bai3 extends AppCompatActivity {
     Intent i;
@@ -41,8 +40,9 @@ public class Bai3 extends AppCompatActivity {
                 Toast.makeText(this, "Ban vua bam vao menu1", Toast.LENGTH_SHORT).show();//code xử lý khi bấm menu1
                 break;
             case R.id.menu2:
-                Toast.makeText(this, "Ban vua bam vao menu2", Toast.LENGTH_SHORT).show();//code xử lý khi bấm menu2
-                break;
+            i = new Intent(Bai3.this, thongtin.class);
+            startActivity(i);
+            break;
             case R.id.menu3:
                 i = new Intent(Bai3.this,MainActivity.class);//code xử lý khi bấm menu3
                 startActivity(i);
