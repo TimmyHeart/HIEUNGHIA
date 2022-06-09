@@ -9,10 +9,11 @@ import android.widget.TextView;
 
 import com.example.kt_tranhieunghia.R;
 
+import models.SaleManager;
+import models.Product;
+
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-
-import models.Product;
 
 /**
  * Created by minhc_000 on 12/08/2015.
@@ -35,11 +36,9 @@ public class ProductAdapter  extends ArrayAdapter {
             convertView = inflater.inflate(R.layout.activity_item, null);
         }
         //lấy các textview trong mỗi view
-        TextView tvProductName = (TextView)convertView
-                .findViewById(R.id.tvProductName);
+        TextView tvProductName = (TextView)convertView.findViewById(R.id.tvProductName);
         TextView tvUnit = (TextView)convertView.findViewById(R.id.tvUnit);
-        TextView tvPrice = (TextView)convertView
-                .findViewById(R.id.tvPrice);
+        TextView tvPrice = (TextView)convertView.findViewById(R.id.tvPrice);
         //hiển thị dư liệu lên từng item của listview ở vị trí position
         Product p = (Product) getItem(position);
         tvProductName.setText(p.getProductName());

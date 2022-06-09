@@ -1,19 +1,14 @@
 package models;
 
-/**
- * Created by minhc_000 on 09/08/2015.
- */
 public class Product {
     private String ProductName;
     private String Unit;
-
     private double Price;
     public Product() {
         ProductName = "";
         Unit = "";
         Price = 0;
     }
-
     public Product(String pname, String unit, double price) {
         ProductName = pname;
         Unit = unit;

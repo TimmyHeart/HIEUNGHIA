@@ -2,9 +2,7 @@ package models;
 
 import java.util.ArrayList;
 
-/**
- * Created by minhc_000 on 12/08/2015.
- */
+
 public class SaleManager {
     private ArrayList Products;
 

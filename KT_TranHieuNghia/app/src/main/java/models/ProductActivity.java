@@ -9,11 +9,12 @@ import android.widget.EditText;
 
 import com.example.kt_tranhieunghia.R;
 
+import models.Product;
+import models.SaleManager;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 
-/**
- * Created by minhc_000 on 13/08/2015.
- */
+
 public class ProductActivity extends Activity {
     public final static String EXTRA_POSITION = "position";
     EditText txtProductName,txtUnit,txtPrice;
@@ -23,7 +24,7 @@ public class ProductActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_product);
+        setContentView(R.layout.listitem2_product);
         //lấy các control trên layout
         txtProductName = (EditText)findViewById(R.id.txtProductName);
         txtUnit = (EditText)findViewById(R.id.txtUnit);
