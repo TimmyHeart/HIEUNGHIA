@@ -37,7 +37,9 @@ public class Bai3 extends AppCompatActivity {
                 onBackPressed();
                 return true;
             case R.id.menu1:
-                Toast.makeText(this, "Ban vua bam vao menu1", Toast.LENGTH_SHORT).show();//code xử lý khi bấm menu1
+                i=new Intent(Bai3.this,thongtin.class);
+                startActivity(i);
+                //code xử lý khi bấm menu3
                 break;
             case R.id.menu2:
             i = new Intent(Bai3.this, thongtin.class);
@@ -58,17 +60,21 @@ public class Bai3 extends AppCompatActivity {
     }
 
     public void moManHinhListView1(View view) {
-        i = new Intent(Bai3.this,Listview1.class);//code xử lý khi bấm menu3
+        i = new Intent(Bai3.this,Listview1.class);//code xử lý khi bấm menu1
         startActivity(i);
     }
 
     public void moManHinhListView2(View view) {
-        i = new Intent(Bai3.this,Listview2.class);//code xử lý khi bấm menu3
+        i = new Intent(Bai3.this,Listview2.class);//code xử lý khi bấm menu2
         startActivity(i);
     }
 
     public void moManHinhListView3(View view) {
         i = new Intent(Bai3.this,Listview3.class);//code xử lý khi bấm menu3
+        startActivity(i);
+    }
+    public void moManHinhListView4(View view) {
+        i = new Intent(Bai3.this,listitem_shop.class);//code xử lý khi bấm menu4
         startActivity(i);
     }
 }

@@ -1,8 +1,5 @@
 package com.example.kt_tranhieunghia;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,6 +9,9 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Listview1 extends AppCompatActivity {
     Intent i;
@@ -58,6 +58,11 @@ public class Listview1 extends AppCompatActivity {
             case android.R.id.home:
                 onBackPressed();
                 return true;
+            case R.id.menu1:
+                i=new Intent(Listview1.this,thongtin.class);
+                startActivity(i);
+                //code xử lý khi bấm menu3
+                break;
 
             default:break;
         }

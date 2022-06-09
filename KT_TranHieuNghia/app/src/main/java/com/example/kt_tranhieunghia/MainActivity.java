@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     Button btnthoat;
-    ImageView img1, img2, img3, img4, img5;
+    ImageView img1, img2, img3, img4, img5,img6;
     Intent i;
     private Menu menu;
 
@@ -31,6 +31,7 @@ img3.setOnClickListener(new View.OnClickListener() {
         startActivity(i);
     }
 });
+
 
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -124,6 +125,7 @@ img3.setOnClickListener(new View.OnClickListener() {
         img3 = findViewById(R.id.image3);
         img4 = findViewById(R.id.image4);
         img5 = findViewById(R.id.image5);
+        img6 = findViewById(R.id.image6);
     }
 
 
